@@ -1,7 +1,7 @@
 <html>
 <body>
 
-<h1>Kidland Dashboard</h1>
+<h1>Kidland Dashboard BETA</h1>
 
 <p>Welcome to the Kidland Dashboard! This page is still in the beta stage, so watch out! There might be some unexpected bugs, or incomplete features.</p>
 
@@ -20,6 +20,7 @@ Password: <input type="text" name="password" id="password"><br>
 function LogIn() {
   if (document.getElementById("password").value == "" && document.getElementById("username").value == "") {
   document.getElementById("no_credentials").innerHTML = "Alert! No credentials were entered. Please reload the page and enter your credentials to continue."
+  alert("Hello!")  
   }
   else if (document.getElementById("password").value == "") {
   document.getElementById("no_password").innerHTML = "Alert! No password was entered. Please reload the page and enter a password to continue."
