@@ -19,15 +19,13 @@ Password: <input type="text" name="password" id="password"><br>
 <script>
 function LogIn() {
   if (document.getElementById("password").value == "" && document.getElementById("username").value == "") {
-  document.getElementById("no_credentials").innerHTML = "Alert! No credentials were entered. Please reload the page and enter your credentials to continue."
-  parent._alert = new parent.Function("alert(arguments[0]);");
-  parent._alert('Test!');  
+  alert("Alert! No credentials were entered. Please enter your credentials to continue.")
   }
   else if (document.getElementById("password").value == "") {
-  document.getElementById("no_password").innerHTML = "Alert! No password was entered. Please reload the page and enter a password to continue."
+  alert("Alert! No password was entered. Please reload the page and enter a password to continue.")
   }
-  else if (document.getElementById("username").value == "") {
-  document.getElementById("no_username").innerHTML = "Alert! No username was entered. Please reload the page and enter a username to continue."
+  else if (document.getElementById("username").value == "") {  
+  alert("Alert! No username was entered. Please reload the page and enter a username to continue.')
   }
   else if (1 == 1) {
   document.getElementById("login").innerHTML = "Logging in as user " + document.getElementById("username").value + "...";
