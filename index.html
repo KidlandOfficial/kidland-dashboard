@@ -1,1 +1,38 @@
-<h1>Hello!</h1>
+<html>
+<body>
+
+<h1>Kidland Dashboard</h1>
+
+<p>Welcome to the Kidland Dashboard! This page is still in the beta stage, so watch out! There might be some unexpected bugs, or incomplete features.</p>
+
+Username: <input type="text" name="username" id="username"><br>
+<p> </p>
+Password: <input type="text" name="password" id="password"><br>
+<p> </p>
+<button onclick="LogIn()">Log In</button>
+
+<div id="login"></div>
+<div id="no_password"></div>
+<div id="no_username"></div>
+<div id="no_credentials"></div>
+
+<script>
+function LogIn() {
+  if (document.getElementById("password").value == "" && document.getElementById("username").value == "") {
+  document.getElementById("no_credentials").innerHTML = "Alert! No credentials were entered. Please reload the page and enter your credentials to continue."
+  }
+  else if (document.getElementById("password").value == "") {
+  document.getElementById("no_password").innerHTML = "Alert! No password was entered. Please reload the page and enter a password to continue."
+  }
+  else if (document.getElementById("username").value == "") {
+  document.getElementById("no_username").innerHTML = "Alert! No username was entered. Please reload the page and enter a username to continue."
+  }
+  else if (1 == 1) {
+  document.getElementById("login").innerHTML = "Logging in as user " + document.getElementById("username").value + "...";
+  }
+}
+</script>
+
+</body>
+</html>
+
