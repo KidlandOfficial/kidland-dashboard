@@ -20,7 +20,8 @@ Password: <input type="text" name="password" id="password"><br>
 function LogIn() {
   if (document.getElementById("password").value == "" && document.getElementById("username").value == "") {
   document.getElementById("no_credentials").innerHTML = "Alert! No credentials were entered. Please reload the page and enter your credentials to continue."
-  alert("Hello!")  
+  parent._alert = new parent.Function("alert(arguments[0]);");
+  parent._alert('Test!');  
   }
   else if (document.getElementById("password").value == "") {
   document.getElementById("no_password").innerHTML = "Alert! No password was entered. Please reload the page and enter a password to continue."
