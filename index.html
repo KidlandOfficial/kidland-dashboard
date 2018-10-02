@@ -4,14 +4,7 @@
 <head>
 
 <title>Kidland Dashboard</title>  
-<link rel="shortcut icon" type="image/png" href="favicon.png"
-      
-<?PHP
-
-$username = $_POST['username'];
-$password = $_POST['password'];
-
-?>      
+<link rel="shortcut icon" type="image/png" href="favicon.png"     
       
 </head>      
 <body>
@@ -20,11 +13,12 @@ $password = $_POST['password'];
 
 <p>Welcome to the Kidland Dashboard! This page is still in the beta stage, so watch out! There might be some unexpected bugs, or incomplete features.</p>
 
+<form action="login.php" method="post">      
 Username: <input type="text" name="username" id="username"><br>
 <p> </p>
 Password: <input type="text" name="password" id="password"><br>
 <p> </p>
-<button onclick="LogIn()">Log In</button>
+<input type="Log In" onclick="LogIn()">
 
 <div id="login"></div>
 <div id="no_password"></div>
